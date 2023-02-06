@@ -175,3 +175,55 @@ section {
 #inicio .contenido .presentacion a:hover {
   background-color: #ff5080;
 }
+
+@media (max-width: 858px){
+
+
+  #inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #inicio .contenido .presentacion .bienvenida {
+    margin-top: 50px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  #inicio .contenido .presentacion h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  #inicio .contenido .presentacion h2 span {
+    font-size: 30px;
+    color: #ff5080;
+  }
+  #inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 10px;
+    text-align: center;
+  }
+  #inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+  }
+  #inicio .contenido .presentacion a:hover {
+    background-color: #ff5080;
+  }
+}
