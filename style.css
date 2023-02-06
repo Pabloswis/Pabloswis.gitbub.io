@@ -204,6 +204,7 @@ section {
   #inicio .contenido .presentacion h2 span {
     font-size: 30px;
     color: #ff5080;
+    display: inline-block;
   }
   #inicio .contenido .presentacion .descripcion {
     max-width: 700px;
