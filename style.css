@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,16 +6,16 @@
   list-style: none;
   /*para que los elementos no salgan de su contenedor */
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 nav {
   position: fixed;
-  background-color: #184E77;
+  background-color: #184e77;
   height: 80px;
   width: 100%;
 }
@@ -29,13 +29,13 @@ nav {
   height: 40px;
   margin-right: 10px;
 }
-.nombre{
-    color: #52B69A;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
+.nombre {
+  color: #52b69a;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
 
 nav ul {
   float: right;
@@ -49,7 +49,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #52B69A;
+  color: #52b69a;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -58,7 +58,7 @@ nav ul li a {
 
 li a.active,
 li a:hover {
-  background: #D9ED92;
+  background: #ff5080;
   transition: 0.5s;
 }
 
@@ -75,12 +75,12 @@ li a:hover {
   display: none;
 }
 
-section {
+#inicio{
   height: calc(100vh - 80px);
-  background: linear-gradient(#184e77f9, #34A0A4);
+  background: linear-gradient(#184e77f9, #34a0a4);
 }
 
-@media (max-width: 952px) {
+@media (max-width: 950px) {
   .enlace {
     padding-left: 20px;
   }
@@ -89,7 +89,7 @@ section {
   }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 850px) {
   .check-btn {
     display: block;
   }
@@ -97,7 +97,7 @@ section {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #1E6091;
+    background: #1e6091;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -114,7 +114,7 @@ section {
   li a:hover,
   li a.active {
     background: none;
-    color: #D9ED92;
+    color: #d9ed92;
   }
   #check:checked ~ ul {
     left: 0;
@@ -124,7 +124,7 @@ section {
 /* Presentacion */
 
 #inicio {
-  background: linear-gradient(#184e77f9, #34A0A4);
+  background: linear-gradient(#184e77f9, #34a0a4);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -170,15 +170,13 @@ section {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  transition: .5s;
+  transition: 0.5s;
 }
 #inicio .contenido .presentacion a:hover {
   background-color: #ff5080;
 }
 
-@media (max-width: 858px){
-
-
+@media (max-width: 858px) {
   #inicio .contenido .presentacion {
     max-width: 1100px;
     height: 100vh;
@@ -222,9 +220,96 @@ section {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    transition: .5s;
+    transition: 0.5s;
   }
   #inicio .contenido .presentacion a:hover {
     background-color: #ff5080;
   }
+  .contenedor-foto{
+    display: none;
+  }
+}
+
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+
+body {
+  background-color: #f7f7f7;
+}
+#sobremi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
+}
+
+#sobremi .contenedor-foto {
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+  margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  display: inline-block;
+
+}
+
+#sobremi .sobremi h2 span {
+  color: #ff5080;
+}
+
+#sobremi .sobremi h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#sobremi .sobremi a:hover {
+  background-color: #ff5080;
+  color: #fff;
 }
